@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+            Junzhe Zhao's Assignment 2.
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    </head>
+    <style>
+        .row{
+            width: 1100px;
+            margin: 30px auto 30px auto;
+        }
+        .image-container{
+            display: table-cell;
+            vertical-align: middle;
+            padding: 50px;
+        }
+    </style>
+
+        <body style="background-color: burlywood;">
+        <!--
+
+        <h1>
+            This is the main heading!
+        </h1>
+
+        <h2>
+            This is a subheading!
+        </h2>
+
+        <p>
+            Here's a sentense!
+        </p>
+
+        <p>
+            Here's another sentense..<br>that continues on the text line!
+        </p>
+    
+    -->      
+            <div class ="row">
+                <div class="image-container"> <img id="1" src="img/drizzle.png"  onmouseover="this.src='img/drizzle1.png';" onmouseout="this.src='img/drizzle.png';" height="300" width="300"></div> 
+                <div class="image-container"> <img id="2" src="img/hail.png"  onmouseover="this.src='img/hail1.png';" onmouseout="this.src='img/hail.png';" height="300" width="300"></div>
+                <div class="image-container"> <img id="3" src="img/rain.png"  onmouseover="this.src='img/rain1.png';" onmouseout="this.src='img/rain.png';" height="300" width="300"></div>
+            </div>
+            <div class="row">
+                <div class="image-container"> <img id="4" src="img/snow.png"  onmouseover="this.src='img/snow1.png';" onmouseout="this.src='img/snow.png';" height="300" width="300"></div> 
+                <div class="image-container"> <img id="5" src="img/sunrise.png"  onmouseover="this.src='img/sunrise1.png';" onmouseout="this.src='img/sunrise.png';" height="300" width="300"></div> 
+                <div class="image-container"> <img id="6" src="img/thunder.png"  onmouseover="this.src='img/thunder1.png';" onmouseout="this.src='img/thunder.png';" height="300" width="300"></div> 
+                </div>
+
+        <div class="row">
+            <div class="image-container"> <img id="7" src="img/thunderstorm.png"  onmouseover="this.src='img/thunderstorm1.png';" onmouseout="this.src='img/thunderstorm.png';" height="300" width="300"></div> 
+            <div class="image-container"> <img id="8" src="img/tornado.png"  onmouseover="this.src='img/tornado1.png';" onmouseout="this.src='img/tornado.png';" height="300" width="300"></div> 
+            <div class="image-container"> <img id="9" src="img/wind.png"  onmouseover="this.src='img/wind1.png';" onmouseout="this.src='img/wind.png';" height="300" width="300"></div>  
+        </div>
+        <script>
+            var sound1 = new buzz.sound("sound/drizzle.mp3");
+            var sound2 = new buzz.sound("sound/hail.mp3");
+            var sound3 = new buzz.sound("sound/rain.mp3");
+            var sound4 = new buzz.sound("sound/snow.mp3");
+            var sound5 = new buzz.sound("sound/sunrise.mp3");
+            var sound6 = new buzz.sound("sound/thunder.mp3");
+            var sound7 = new buzz.sound("sound/thunderstorm.mp3");
+            var sound8 = new buzz.sound("sound/tornado.mp3");
+            var sound9 = new buzz.sound("sound/wind.mp3"); 
+            
+            window.onload = function(){
+                document.getElementById('1').addEventListener('click', function () {sound1.play("sound/drizzle.mp3");});
+                document.getElementById('2').addEventListener('click', function () {sound2.play("sound/hail.mp3");});
+                document.getElementById('3').addEventListener('click', function () {sound3.play("sound/rain.mp3");});
+                document.getElementById('4').addEventListener('click', function () {sound4.play("sound/snow.mp3");});
+                document.getElementById('5').addEventListener('click', function () {sound5.play("sound/sunrise.mp3");});
+                document.getElementById('6').addEventListener('click', function () {sound6.play("sound/thunder.mp3");});
+                document.getElementById('7').addEventListener('click', function () {sound7.play("sound/thunderstorm.mp3");});
+                document.getElementById('8').addEventListener('click', function () {sound8.play("sound/tornado.mp3");});
+                document.getElementById('9').addEventListener('click', function () {sound9.play("sound/wind.mp3");});
+            };
+        </script>   
+    </body>
+    
+</html>
